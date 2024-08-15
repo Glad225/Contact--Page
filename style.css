@@ -1,0 +1,113 @@
+:root{
+    --background-color: lightblue;
+    --2background:#FFFFFF;
+    --button-bcolor:rgb(70, 133, 70);
+}
+body{
+    background-color: var(--background-color);
+    font-family: inter static;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.general{
+    background-color: var(--2background) ;
+    border-radius: 10px;
+    width: 300px; 
+    margin: auto;
+    padding: 20px 40px 40px 40px;
+    margin-top: 30px;
+    @media screen and (min-width:700px) {
+        width: 600px;
+        background-color: #FFFFFF;
+    }
+
+}
+
+input{
+    border: 1px solid gray;
+}
+.first-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+    @media screen and (min-width:700px) {
+        flex-direction: row;
+    }
+
+}
+.first{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+}
+.name{
+    padding: 8px;
+    margin-top: 10px;
+    border-radius: 5px;    
+}
+.email{
+    display: flex;
+    flex-direction: column;
+    margin-top: 16px;
+}
+.query{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+    gap: 5px;
+    padding: 8px;
+    border: 1px solid #928484;
+    border-radius: 5px;
+    @media screen and (min-width:700px) {
+        width: 100%;
+    }
+}
+.second{
+    margin: 20px 0;
+    
+}
+.second-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap:10px;
+    margin-top: 10px;
+    
+    @media screen and (min-width:700px) {
+        flex-direction: row;
+    }
+}
+.column{
+    display: flex;
+    flex-direction: column;
+    margin: 5px 0;
+}
+.big-text{
+    padding: 30px;
+    margin-top: 10px ;
+    border-radius: 5px;
+}
+.row{
+    display: flex;
+    flex-direction: row;
+    margin: 5px 0;
+    gap: 10px;
+}
+button{
+    background-color: var(--button-bcolor);
+    color: var(--2background);
+    padding: 10px;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid rgb(70, 133, 70);
+    outline: none;
+}
+button:hover{
+    background-color:rgb(83, 119, 83) ;
+}
